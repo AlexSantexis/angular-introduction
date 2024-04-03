@@ -5,6 +5,7 @@ import { ComponentInputExampleComponent } from './components/component-input-exa
 import { ForDirectiveExampleComponent } from './components/for-directive-example/for-directive-example.component';
 import { SimpleDatabaseComponent } from './components/simple-database/simple-database.component';
 import { SimpleDatabaseExampleComponent } from './components/simple-database-example/simple-database-example.component';
+import { ComponentOutputExampleComponent } from './components/component-output-example/component-output-example.component';
 
 export const routes: Routes = [
   { path: 'event-bind-example', component: EventBindExampleComponent },
@@ -18,4 +19,8 @@ export const routes: Routes = [
     component: SimpleDatabaseExampleComponent,
   },
   { path: 'for-directive-example', component: ForDirectiveExampleComponent },
+  {
+    path: 'component-output-example',
+    component: ComponentOutputExampleComponent,
+  },
 ];
