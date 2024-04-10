@@ -8,6 +8,7 @@ import { SimpleDatabaseExampleComponent } from './components/simple-database-exa
 import { ComponentOutputExampleComponent } from './components/component-output-example/component-output-example.component';
 import { TemplateDrivenFormExampleComponent } from './components/template-driven-form-example/template-driven-form-example.component';
 import { ReactiveFormExampleComponent } from './components/reactive-form-example/reactive-form-example.component';
+import { HttpClientExampleComponent } from './components/http-client-example/http-client-example.component';
 
 export const routes: Routes = [
   { path: 'event-bind-example', component: EventBindExampleComponent },
@@ -30,4 +31,5 @@ export const routes: Routes = [
     component: TemplateDrivenFormExampleComponent,
   },
   { path: 'reactive-form-example', component: ReactiveFormExampleComponent },
+  { path: 'http-client-example', component: HttpClientExampleComponent },
 ];
