@@ -13,6 +13,9 @@ import { UserRegistrationComponent } from './components/user-registration/user-r
 import { RestrictedContentExampleComponent } from './components/restricted-content-example/restricted-content-example.component';
 import { authGuard } from './shared/guards/auth.guard';
 import { UserLoginComponent } from './components/user-login/user-login.component';
+import { CrudDashboardComponent } from './components/crud/crud-dashboard/crud-dashboard.component';
+import { CrudCreateExampleComponent } from './components/crud/crud-create-example/crud-create-example.component';
+import { CrudReadExampleComponent } from './components/crud/crud-read-example/crud-read-example.component';
 
 export const routes: Routes = [
   { path: 'event-bind-example', component: EventBindExampleComponent },
@@ -44,4 +47,29 @@ export const routes: Routes = [
   },
   { path: 'login', component: UserLoginComponent },
   { path: '', component: WelcomeComponent },
+  {
+    path: 'crud-example',
+    component: CrudDashboardComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'crud-example/create',
+    component: CrudCreateExampleComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'crud-example/read',
+    component: CrudReadExampleComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'crud-example/update',
+    component: CrudDashboardComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'crud-example/delete',
+    component: CrudDashboardComponent,
+    canActivate: [authGuard],
+  },
 ];
